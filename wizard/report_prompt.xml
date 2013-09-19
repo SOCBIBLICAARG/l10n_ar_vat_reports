@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+	<data>
+		<!-- Modify -->
+		<record model='ir.ui.view' id='sale_vat_report_wizard_form'>
+			<!-- Modify --> <field name='name'>Sale VAT Report</field>
+			<!-- Modify --> <field name='model'>sale.vat.report</field>
+			<field name='arch' type='xml'>
+				<form string='Report' version="7.0">
+					<group>
+						<field name="output_type"/>
+					</group>
+
+					<!-- Modify -->
+					<group col="4">
+						<field name="journal_ids"/>
+						<field name="amount_total"/>
+					</group>
+	                
+	                <!-- Dont Modify -->
+	                <footer>
+						<button class="oe_highlight" string='Print' name='check_report' type='object' />
+						or
+						<button class="oe_link" string='Cancel' special='cancel'/>
+	                </footer>
+				</form>
+			</field>
+		</record>
+
+		<!-- Modify -->
+		<record id="sale_vat_report_action" model="ir.actions.act_window">
+			<!-- Modify -->
+			<field name="name">Sale VAT Report</field>
+			<field name="res_model">sale.vat.report</field>
+			<field name="view_id" ref="sale_vat_report_wizard_form"/>
+			
+			<!-- Dont Modify -->
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_type">form</field>
+            <field name="target">new</field>			
+			<field name="view_mode">form</field>
+		</record>
+
+		<!-- Modify -->
+        <menuitem id="wizard_test"
+                  action="sale_vat_report_action"
+                  name="Sale VAT Report"
+                  parent="account.menu_finance_receivables"
+                  sequence="3"/>                  
+	</data>
+</openerp>

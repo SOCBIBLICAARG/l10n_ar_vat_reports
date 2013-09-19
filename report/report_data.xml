@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+	<data>
+
+		<!-- Change -->
+		<record model="ir.actions.report.xml" id='sale_vat_report'>
+			<!-- Change -->
+			<field name='name'>Sale VAT Report</field>
+			<field name='report_name'>sale_vat_report</field>
+			<field name='pentaho_report_model_id' ref="account.model_account_invoice"/>
+			<field name='model'>account.invoice</field>
+			<field name='pentaho_filename'>l10n_ar_vat_reports/report/vat_report.prpt</field>
+			
+			<!-- Not usual to be change -->
+			<field name='attachement'></field>
+			<field name='attachement_use' eval="False"/>
+			<field name='pentaho_report_output_type'>pdf</field><!-- valores posibles: pdf, html, csv, xls, rtf, txt -->			
+			<!-- <field name='groups_id' eval=""/> -->
+
+			<!-- Dont change -->
+			<field name='pentaho_load_file' eval="True"/>
+			<field name='is_pentaho_report' eval="True"/>			
+		</record>
+	</data>
+</openerp>
