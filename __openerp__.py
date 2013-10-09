@@ -1,17 +1,17 @@
 # v7.0 - Beta.
 {
-    "name": "Pentaho res.partner report sample",
+    "name": "Argentina VAT Reports",
     "description": """
-Titile of pentaho res.partner report sample
-===========================================
+Argentina VAT Reports
+=====================
+Creates Sale and Purchase VAT report menus in "accounting/reporting/taxes report"
 
-Description of pentaho res.partner report sample
-
+It requires pentaho_reports module, you can find it in https://github.com/WillowIT/Pentaho-reports-for-OpenERP
     """,
     "version": "0.1",
     'author': 'Sistemas ADHOC',
     'website': 'http://www.sistemasadhoc.com.ar',
-    "depends": ["account", "pentaho_reports"],
+    "depends": ["pentaho_reports", "l10n_ar_invoice"],
     "category": "Reporting subsystems",
     "data": [
             'wizard/report_prompt.xml',
