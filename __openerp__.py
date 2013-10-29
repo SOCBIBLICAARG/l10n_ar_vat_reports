@@ -1,22 +1,11 @@
 # v7.0 - Beta.
-{
-    "name": "Pentaho res.partner report sample",
-    "description": """
-Titile of pentaho res.partner report sample
-===========================================
-
-Description of pentaho res.partner report sample
-
-    """,
-    "version": "0.1",
+{   'active': False,
     'author': 'Sistemas ADHOC',
-    'website': 'http://www.sistemasadhoc.com.ar',
-    "depends": ["account", "pentaho_reports"],
-    "category": "Reporting subsystems",
-    "data": [
-            'wizard/report_prompt.xml',
-            'report/report_data.xml',
-             ],
-    "installable": True,
-    "active": False
-}
+    'category': 'Reporting subsystems',
+    'data': ['wizard/report_prompt.xml', 'report/report_data.xml'],
+    'depends': ['account', 'pentaho_reports'],
+    'description': '\n\nTitile of pentaho res.partner report sample\n\n===========================================\n\n\n\nDescription of pentaho res.partner report sample\n\n\n\n    ',
+    'installable': True,
+    'name': 'Pentaho res.partner report sample',
+    'version': '0.206',
+    'website': 'http://www.sistemasadhoc.com.ar'}
