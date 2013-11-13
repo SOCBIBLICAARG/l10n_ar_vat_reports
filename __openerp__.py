@@ -7,5 +7,5 @@
     'description': '\n\nTitile of pentaho res.partner report sample\n\n===========================================\n\n\n\nDescription of pentaho res.partner report sample\n\n\n\n    ',
     'installable': True,
     'name': 'Pentaho res.partner report sample',
-    'version': '0.211',
+    'version': '0.212',
     'website': 'http://www.sistemasadhoc.com.ar'}
